@@ -8,6 +8,10 @@ RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/
   apt-get install -y \
     python-pip \
     ros-kinetic-desktop-full && \
+    python-rosinstall && \
+    python-rosinstall-generator && \
+    python-wstool && \
+    build-essential
 
 # cleanup
   apt-get clean && \
