@@ -2,8 +2,11 @@
 
 See https://github.com/udacity/CarND-Capstone
 
-# How to use this container?
+# What is this container?
+This container is the full environment to compile and execute Udacity carnd capstone project.
+The simulator will have to run on your host machine, but everything else can be done within this container.
 
+# How to use this container?
 1. Download the script
 ```bash
 wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/run.sh
@@ -19,6 +22,3 @@ catkin_make
 source devel/setup.sh
 roslaunch launch/styx.launch
 ```
-
-# What is missing?
-I need to provide documentation about how to connect the container to the car simulator running on the host machine.
