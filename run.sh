@@ -1,0 +1,8 @@
+#! /bin/bash
+set -e
+
+# Settings from environment
+UDACITY_SOURCE=${UDACITY_SOURCE:-source}
+UDACITY_IMAGE=${UDACITY_IMAGE:-bydavy/carnd-capstone}
+
+docker run --rm -it -v "$UDACITY_SOURCE:/udacity" ${UDACITY_IMAGE}
