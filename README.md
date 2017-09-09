@@ -2,7 +2,7 @@
 
 See https://github.com/udacity/CarND-Capstone
 
-# Example
+# How to use this container?
 
 1. Download the script
 ```bash
