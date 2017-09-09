@@ -27,10 +27,11 @@ ADD $PYTHON_DEPS /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt && \
   rm /tmp/requirements.txt
 
-ARG MY_UID=1000
-ARG MY_GID=999
-RUN groupadd -g $MY_GID udacity
-RUN useradd --create-home -u $MY_UID -g $MY_GID udacity
+# Create udacity user
+ARG C_UID=1000
+ARG C_GID=999
+RUN groupadd -g $C_GID udacity
+RUN useradd --create-home -u $C_UID -g $C_GID udacity
 RUN echo "source /opt/ros/kinetic/setup.bash" >> /home/udacity/.bashrc
 
 VOLUME /udacity
