@@ -19,3 +19,6 @@ catkin_make
 source devel/setup.sh
 roslaunch launch/styx.launch
 ```
+
+# What is missing?
+I need to provide documentation about how to connect the container to the car simulator running on the host machine.
