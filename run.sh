@@ -1,5 +1,5 @@
 #! /bin/bash
-set -ex
+set -e
 
 # Settings from environment
 UDACITY_SOURCE=${UDACITY_SOURCE:-source}
