@@ -6,7 +6,7 @@ See https://github.com/udacity/CarND-Capstone
 This container is the full environment to compile and execute Udacity carnd capstone project.
 The simulator will have to run on your host machine, but everything else can be done within this container.
 
-# How to use this container?
+# How to use it?
 1. Download the script
 ```bash
 wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/run.sh
@@ -15,7 +15,7 @@ wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/run.s
 ```bash
 EXPORT UDACITY_SOURCE=/home/user/capstone_source && run.sh
 ```
-3. You're now within the container and the current directory contains the source directory of your project. You can compile and run your project with the following command:
+3. You're now within the container and the current directory contains the source of your project. You can compile and run it with the following command:
 ```bash
 cd ros
 catkin_make
