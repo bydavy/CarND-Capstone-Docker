@@ -11,7 +11,7 @@ The simulator will have to run on your host machine, but everything else can be 
 ```bash
 wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/run.sh
 ```
-2. Specify the path of your source code and start the container
+2. Specify the path of your source code and start the script
 ```bash
 EXPORT UDACITY_SOURCE=/home/user/capstone_source && run.sh
 ```
