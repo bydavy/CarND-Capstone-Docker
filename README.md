@@ -13,7 +13,7 @@ cd /home/user/capstone_source
 ```
 2. Download the script into your project
 ```bash
-wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/run.sh
+wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/utils/run.sh
 ```
 3. Start the script
 ```bash
