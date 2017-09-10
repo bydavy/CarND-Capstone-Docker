@@ -23,6 +23,13 @@ source devel/setup.sh
 roslaunch launch/styx.launch
 ```
 
+## Aliases defined in the container
+They are some cool aliases that are defined in the container
+```bash
+udacity_make #Compiles the project
+udacity_run #Executes the project
+```
+
 ## I'm on MacOS, what do I need to do differently?
-I recommend to install [Docker for MacOS](https://docs.docker.com/docker-for-mac/install/) instead of managing your own VM yourself.
-Once installed, just run all commands including the ./run.sh script on your mac. Everything else is taken care for you
+I recommend to install [Docker for MacOS](https://docs.docker.com/docker-for-mac/install/) instead of managing your own VM.
+Once installed, just run all commands including the ./run.sh script on MacOS. Everything else is taken care for you.

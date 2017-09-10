@@ -8,10 +8,6 @@ RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/
   apt-get install -y \
     python-pip \
     ros-kinetic-desktop-full && \
-    python-rosinstall && \
-    python-rosinstall-generator && \
-    python-wstool && \
-    build-essential
 
 # cleanup
   apt-get clean && \
@@ -25,6 +21,10 @@ ADD dbw_mkz/* /tmp/
 RUN cd /tmp && ./sdk_update.bash && \
   rm /tmp/sdk_update.bash /tmp/sdk_install.bash
 
+# Initialize rosdep
+RUN rosdep init && \
+  rosdep update
+
 # Install python dependencies
 ARG PYTHON_DEPS=requirements.txt
 ADD $PYTHON_DEPS /tmp/requirements.txt
@@ -36,7 +36,10 @@ ARG C_UID=1000
 ARG C_GID=999
 RUN groupadd -g $C_GID udacity
 RUN useradd --create-home -u $C_UID -g $C_GID udacity
-RUN echo "source /opt/ros/kinetic/setup.bash" >> /home/udacity/.bashrc
+
+ADD bashrc_udacity /home/udacity/.bashrc_udacity
+RUN echo "source /home/udacity/.bashrc_udacity" >> /home/udacity/.bashrc && \
+  echo "source /opt/ros/kinetic/setup.bash" >> /home/udacity/.bashrc
 
 VOLUME /udacity
 RUN chown udacity:udacity /udacity
