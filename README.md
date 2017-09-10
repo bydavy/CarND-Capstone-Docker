@@ -17,6 +17,7 @@ wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/run.s
 ```
 3. Start the script
 ```bash
+chmod u+x run.sh
 ./run.sh
 ```
 4. You're now within the container and the current directory contains the source of your project. You can compile and run it with the following command:
