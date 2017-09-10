@@ -28,7 +28,7 @@ source devel/setup.sh
 roslaunch launch/styx.launch
 ```
 
-## Aliases defined in the container
+## Handy aliases
 They are some cool aliases that are defined in the container
 ```bash
 udacity_make #Compiles the project

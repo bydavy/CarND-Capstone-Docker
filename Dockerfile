@@ -22,8 +22,7 @@ RUN cd /tmp && ./sdk_update.bash && \
   rm /tmp/sdk_update.bash /tmp/sdk_install.bash
 
 # Initialize rosdep
-RUN rosdep init && \
-  rosdep update
+RUN rosdep init
 
 # Install python dependencies
 ARG PYTHON_DEPS=requirements.txt
@@ -45,4 +44,5 @@ VOLUME /udacity
 RUN chown udacity:udacity /udacity
 
 USER udacity:udacity
+RUN rosdep update
 WORKDIR udacity
