@@ -7,15 +7,19 @@ The container connect to the port 4567 of the host machine, that's the port the 
 See https://github.com/udacity/CarND-Capstone
 
 ## How to use it?
-1. Download the script
+1. Go to your project directory
+```bash
+cd /home/user/capstone_source
+```
+2. Download the script into your project
 ```bash
 wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/run.sh
 ```
-2. Specify the path of your source code and start the script
+3. Start the script
 ```bash
-export UDACITY_SOURCE=/home/user/capstone_source && ./run.sh
+./run.sh
 ```
-3. You're now within the container and the current directory contains the source of your project. You can compile and run it with the following command:
+4. You're now within the container and the current directory contains the source of your project. You can compile and run it with the following command:
 ```bash
 cd ros
 catkin_make
