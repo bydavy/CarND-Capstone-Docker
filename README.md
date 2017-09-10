@@ -20,7 +20,7 @@ wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/run.s
 chmod u+x run.sh
 ./run.sh
 ```
-4. You're now within the container and the current directory contains the source of your project. You can compile and run it with the following command:
+4. You're now within the container and the current directory contains the source of your project. You can compile and run it with the following commands:
 ```bash
 cd ros
 catkin_make
