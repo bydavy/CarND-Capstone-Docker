@@ -13,7 +13,7 @@ wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/run.s
 ```
 2. Specify the path of your source code and start the script
 ```bash
-EXPORT UDACITY_SOURCE=/home/user/capstone_source && run.sh
+export UDACITY_SOURCE=/home/user/capstone_source && ./run.sh
 ```
 3. You're now within the container and the current directory contains the source of your project. You can compile and run it with the following command:
 ```bash
@@ -22,3 +22,7 @@ catkin_make
 source devel/setup.sh
 roslaunch launch/styx.launch
 ```
+
+# What if I'm on MacOS?
+I recommend to install [Docker for MacOS](https://docs.docker.com/docker-for-mac/install/) instead of managing your own VM yourself.
+Once installed, just run all commands including the ./run.sh script on your mac. Everything else is taken care for you
