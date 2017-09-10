@@ -1,12 +1,12 @@
-# Docker container to build Udacity carnd capstone project
+# Docker container for CarND-Capstone project
+
+This is the last project of the Udacity self-driving car NanoDegree. It's composed of a simulator (that should run on your local machine) and of the brain of the car (that should run in this container, including compilation).
+
+The container connect to the port 4567 of the host machine, that's the port the simulator listen on.
 
 See https://github.com/udacity/CarND-Capstone
 
-# What is this container?
-This container is the full environment to compile and execute Udacity carnd capstone project.
-The simulator will have to run on your host machine, but everything else can be done within this container.
-
-# How to use it?
+## How to use it?
 1. Download the script
 ```bash
 wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/run.sh
@@ -23,6 +23,6 @@ source devel/setup.sh
 roslaunch launch/styx.launch
 ```
 
-# What if I'm on MacOS?
+## I'm on MacOS, what do I need to do differently?
 I recommend to install [Docker for MacOS](https://docs.docker.com/docker-for-mac/install/) instead of managing your own VM yourself.
 Once installed, just run all commands including the ./run.sh script on your mac. Everything else is taken care for you
