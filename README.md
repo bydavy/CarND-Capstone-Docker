@@ -1,8 +1,8 @@
-# Docker container for CarND-Capstone project
+# CarND-Capstone project's Docker container
 
-This is the last project of the Udacity self-driving car NanoDegree. It's composed of a simulator (that should run on your local machine) and of the brain of the car (that should run in this container, including compilation).
+CarND-Capstone is the last project of the Udacity self-driving car NanoDegree. It's composed of a simulator (running on your local machine) and the brain of the car (running in this container, including compilation and debugging).
 
-The container connect to the port 4567 of the host machine, that's the port the simulator listen on.
+The container connects to the port 4567 of the host machine, that's the port the simulator listens on.
 
 See [https://github.com/udacity/CarND-Capstone](https://github.com/udacity/CarND-Capstone)
 
@@ -27,7 +27,7 @@ wget https://raw.githubusercontent.com/bydavy/CarND-Capstone-Docker/master/utils
 ```bash
 ./run.sh
 ```
-2.You're now within the container and the current directory contains the source of your project. You can compile and run you project:
+2.You're now within the container and the current directory contains the source code of your project. You can compile and run your project:
 ```bash
 cd ros
 catkin_make
@@ -42,5 +42,5 @@ udacity_make #Compiles the project
 udacity_run #Executes the project
 ```
 
-### I want multiple bash sessions to my container
-Simply open a new terminal and run the script again, if your container is currently running it will attach to it. Therefore, you can have one terminal session to run the project and another one to query for ROS's topic or what have you.
+### Multiple bash sessions
+Simply open a new terminal and run the script again, if your container is currently running it will attach to it. Therefore, you can have one terminal session to run the project and another one to query ROS's topic or what have you.
