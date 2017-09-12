@@ -7,7 +7,7 @@ The container connects to the port 4567 of the host machine, that's the port the
 See [https://github.com/udacity/CarND-Capstone](https://github.com/udacity/CarND-Capstone)
 
 ## Supported OSes
-Linux and MacOS are supported.
+Linux (GPU acceleration for Nvidia graphics cards) and MacOS are supported.
 
 ### MacOS
 I recommend to install [Docker for MacOS](https://docs.docker.com/docker-for-mac/install/) instead of managing your own VM (port forwarding and file sharing is automated for you).
