@@ -6,9 +6,7 @@ RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/
   apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116 && \
   apt-get update && \
   apt-get install -y \
-    python-pip \
     ros-kinetic-desktop-full && \
-
 # cleanup
   apt-get clean && \
   rm -rf \
@@ -23,6 +21,18 @@ RUN cd /tmp && ./sdk_update.bash && \
 
 # Initialize rosdep
 RUN rosdep init
+
+RUN apt-get install -y \
+  protobuf-compiler \
+  python-pip \
+  python-pil \
+  python-lxml \
+# cleanup
+  apt-get clean && \
+  rm -rf \
+          /tmp/* \
+          /var/lib/apt/lists/* \
+          /var/tmp/*
 
 # Install python dependencies
 ARG PYTHON_DEPS=requirements.txt
