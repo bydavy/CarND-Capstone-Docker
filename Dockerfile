@@ -26,7 +26,7 @@ RUN apt-get install -y \
   protobuf-compiler \
   python-pip \
   python-pil \
-  python-lxml \
+  python-lxml && \
 # cleanup
   apt-get clean && \
   rm -rf \
