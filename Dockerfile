@@ -34,6 +34,9 @@ RUN apt-get install -y \
           /var/lib/apt/lists/* \
           /var/tmp/*
 
+# Update pip
+RUN pip install --upgrade pip
+
 # Install python dependencies
 ARG PYTHON_DEPS=requirements.txt
 COPY $PYTHON_DEPS /tmp/requirements.txt
